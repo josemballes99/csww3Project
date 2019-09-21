@@ -1,0 +1,303 @@
+/*Clear The Margins of the page*/
+
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+/*Set up the main page*/
+body{
+    position: relative;
+    margin: 0;
+    padding:0;
+    min-height: 100%;
+}
+/*Header Styling*/
+header {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 100%;
+    height: 300px;
+    background-color: #83000F;
+    margin: 0;
+    text-align: center;
+    font-size: 34pt;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;    /* vertical align */
+    align-items: center;
+}
+
+/*menu styling*/
+nav{
+    float: left;
+    width: 180px;
+    height: 600px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin:0;
+    text-align: center;
+    font-size: 18pt;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+    height: 100%;
+    overflow: auto;
+}
+
+.menulist a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.menulist a.active {
+    background-color: #83000F;
+    color: #FFFFFF;
+}
+
+.menulist a:hover:not(.active) {
+    background-color: #83000F;
+    color: #FFFFFF;
+}
+
+
+/*Section styling depending on what the page does 
+everything is covererd in the following css code up until the footer*/
+
+h3{
+    font-size: 36pt;
+    color:black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#SearchForm{
+    display: flex;
+    justify-content: center;
+}
+
+#searchObject{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#cityObject{
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#rating{
+    width: 150px;
+}
+
+.myButton {
+    background-color: #83000F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#results{
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px; 
+    float: left;
+    width: 40%;
+}
+
+#venue{
+    margin-left: 10px;
+    margin-right: auto;
+    margin-top: 10px; 
+    float: left;
+    width: 40%;
+}
+
+table{
+    border-collapse: collapse;
+    overflow-x:auto;
+}
+
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px;
+}
+
+#map-canvas{
+    float: right;
+    height: 475px;
+    width: 600px;
+    margin-top: 5px;
+}
+
+#map{
+    height: 90%;
+    width: 90%;
+}
+
+.error {
+    color: red;
+    font-family: Verdana, Geneva, sans-serif;
+    
+}
+
+.form {
+    left: 50%;
+    top: 50%;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+#reg{
+    justify-content: center;
+}
+label{
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+fieldset{
+    border: none;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+
+/*footer styling*/
+footer{
+    clear: both;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width:100%;
+    height: 150px;
+    background-color:#000000;
+    color: #FFFFFF;
+    margin:0;
+    text-align: center;
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+    /* vertical align */
+    align-items: center;
+}
+
+.foot {
+    letter-spacing: 2px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#000000;
+    overflow: auto;
+}
+
+
+
+/*Adjusts CSS for midium sized screens like tablets*/
+@media (max-width:1000px) {
+    header{
+    width:100%;
+    height:200px; 
+    font-size: 20pt;
+    }
+    nav{
+    width: 150px;
+    height: 500px;
+    font-size: 15pt;
+    }
+    footer{
+    width:100%;
+    height: 100px;
+    font-size: 12pt;
+    }
+    h3{
+    font-size: 18pt;
+    }
+    #results{
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px; 
+    float: none;
+    width: 75%;
+    }
+    #venue{
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px; 
+    float: none;
+    width: 75%;
+    }
+    #map-canvas{
+    margin-left: 5px;
+    height: 350px;
+    width: 375px;
+    }
+}
+
+/*Adjusts CSS for small sized screens like smartphones*/
+@media (max-width:600px) {
+    header{
+    width:100%;
+    height:150px; 
+    font-size: 15pt;
+    }
+    nav{
+    clear: left;
+    float: none;
+    width: 100%;
+    font-size: 10pt;
+    height: 130px;
+    }
+    footer{
+    width:100%;
+    height: 80px;
+    font-size: 10pt;
+    }
+    h3{
+    font-size: 18pt;
+    }
+    #results{
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px; 
+    float: none;
+    width: 60%;
+    }
+    #venue{
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: 5px; 
+    float: none;
+    width: 60%;
+    }
+    #map-canvas{
+    float:none;
+    margin-left: 5px;
+    height: 350px;
+    width: 375px;
+    }
+}
